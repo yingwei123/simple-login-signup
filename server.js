@@ -46,6 +46,10 @@ app.get("/signup",(req,res)=>{
     res.render('signup.ejs')
 })
 
+app.get("/", (req,res) =>{
+  res.render("/signup.ejs")
+})
+
 //user register
 app.post("/signup", async(req,res) =>{
     //get the email, password, fname, lname from the post req
